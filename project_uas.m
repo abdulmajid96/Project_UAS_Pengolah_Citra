@@ -181,19 +181,47 @@ function pushbutton3_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton3 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-axes(handles.axes1); cla reset;
-axes(handles.axes2); cla reset; 
-axes(handles.axes3); cla reset;
-axes(handles.axes4); cla reset;
-axes(handles.axes5); cla reset;
-axes(handles.axes6); cla reset;
-axes(handles.axes7); cla reset;
-set(handles.edit1); cla reset;
-set(handles.edit2); cla reset;
-set(handles.edit3); cla reset;
-set(handles.edit4); cla reset;
-set(handles.edit5); cla reset;
-set(handles.edit7); cla reset;
+axes(handles.axes1)
+cla reset
+set(gca,'XTick',[])
+set(gca,'YTick',[])
+ 
+axes(handles.axes2)
+cla reset
+set(gca,'XTick',[])
+set(gca,'YTick',[])
+ 
+axes(handles.axes3)
+cla reset
+set(gca,'XTick',[])
+set(gca,'YTick',[])
+ 
+axes(handles.axes4)
+cla reset
+set(gca,'XTick',[])
+set(gca,'YTick',[])
+ 
+axes(handles.axes5)
+cla reset
+set(gca,'XTick',[])
+set(gca,'YTick',[])
+ 
+axes(handles.axes6)
+cla reset
+set(gca,'XTick',[])
+set(gca,'YTick',[])
+ 
+axes(handles.axes7)
+cla reset
+set(gca,'XTick',[])
+set(gca,'YTick',[])
+ 
+set(handles.edit1,'String',[])
+set(handles.edit2,'String',[])
+set(handles.edit3,'String',[])
+set(handles.edit4,'String',[])
+set(handles.edit5,'String',[])
+set(handles.edit7,'String',[])
 
 % --- Executes when figure1 is resized.
 function figure1_SizeChangedFcn(hObject, eventdata, handles)
